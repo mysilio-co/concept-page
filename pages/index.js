@@ -32,20 +32,20 @@ export default function Home({ tagPrefix, conceptPrefix, name, body, customCSS, 
         {paymentPointer && (
           <meta name="monetization" content={paymentPointer} />
         )}
-        {customCSS && (
-          <style>{customCSS}</style>
-        )}
+        {customCSS && <style>{customCSS}</style>}
       </Head>
-      <main className="min-h-screen">
-        <section class="content">
-          <h1 className="title">
-            {name}
-          </h1>
+      <main className="min-h-screen bg-gradient-to-r from-my-green via-ocean to-my-purple">
+        <section className="content">
+          <h1 className="title">{name}</h1>
           <div className="note-body">
-            <NoteBody json={body} conceptPrefix={conceptPrefix} tagPrefix={tagPrefix}/>
+            <NoteBody
+              json={body}
+              conceptPrefix={conceptPrefix}
+              tagPrefix={tagPrefix}
+            />
           </div>
         </section>
       </main>
     </>
-  )
+  );
 }

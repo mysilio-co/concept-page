@@ -23,7 +23,7 @@ main {
 }
 
 .note-body {
-  @apply font-sans text-xl max-w-2xl;
+  @apply text-white border-4 px-6 py-2 border-white w-3/4 block m-auto;
 }
 
 @tailwind utilities;
