@@ -1,4 +1,4 @@
-# Single Page Gate
+# Concept Page
 
 This is the default single page Understory Garden Gate. It's a
 simple [Next.js](https://next.js.org/) application designed be used as
